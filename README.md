@@ -14,7 +14,7 @@ Here are my personal perference.
 With black you can format Python code, and my preference is using [PEP 8](https://www.python.org/dev/peps/pep-0008/) as my style guide, and so, 79-characters per line of code is what I use.
 
 In case of `black` configuration we can setup in `pyproject.toml` file. Mine look like this:
-```
+```yaml
 [tool.black]
 line-length = 79
 multi_line_output = 3
@@ -36,7 +36,7 @@ And just as their slogan states: “isort your imports, so you don’t have to.�
 
 And the same for `isort` inside of `setup.cfg`.
 
-```
+```yaml
 [isort]
 line_length = 88
 skip = env/
@@ -63,7 +63,7 @@ But there’s still something missing. black does not care about comments or [do
 
 So in order to use `flake8` you’ll have to create a `.flake8` file or `setup.cfg` file, and i prefer `setup.cfg`. Mine looks like this:
 
-```
+```yaml
 [flake8]
 exclude = .git,*/migrations/*,*env*,*venv*,__pycache__,*/staticfiles/*,*/mediafiles/*
 max-line-length = 120
