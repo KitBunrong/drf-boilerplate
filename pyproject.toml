@@ -1,8 +1,14 @@
 [tool.black]
-line-length = 79
+line-length = 119
 multi_line_output = 3
 exclude = '''
-/( <br>
+/(
+    | \.git
+    | \.venv
+    | _build
     | env
+    | build
+    | dist
+    | migrations
 )/
 '''

@@ -19,7 +19,7 @@ In case of `black` configuration we can setup in `pyproject.toml` file. Mine loo
 line-length = 79
 multi_line_output = 3
 exclude = '''
-/( <br>
+/(
     | env
 )/
 '''

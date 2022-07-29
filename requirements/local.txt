@@ -1,0 +1,18 @@
+-r base.txt
+
+psycopg2==2.9.3
+flake8==4.0.1
+black==22.6.0
+isort==5.10.1
+pre-commit==2.20.0
+argh==0.26.2
+PyYAML==6.0
+watchdog==2.1.6
+
+pytest-django==4.5.2
+
+pytest-factoryboy==2.1.0
+
+Faker==11.3.0
+
+pytest-cov==3.0.0
